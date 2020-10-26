@@ -1,6 +1,6 @@
 listener "tcp" {
     purpose = "proxy"
-    address = "192.168.99.102"
+    address = "192.168.50.10"
     tls_disable = true
 }
 
@@ -11,10 +11,10 @@ worker {
 
   # Workers must be able to reach controllers on :9202
   controllers = [
-    "192.168.99.102"
+    "192.168.50.10"
   ]
 
-  public_addr = "192.168.99.102"
+  public_addr = "192.168.50.10"
 }
 
 # must be same key as used on controller config

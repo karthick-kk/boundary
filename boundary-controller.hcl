@@ -19,7 +19,7 @@ controller {
 # API listener configuration block
 listener "tcp" {
   # Should be the address of the NIC that the controller server will be reached on
-  address = "192.168.99.102"
+  address = "192.168.50.10"
   # The purpose of this listener block
   purpose = "api"
 
@@ -34,7 +34,7 @@ listener "tcp" {
 # Data-plane listener configuration block (used for worker coordination)
 listener "tcp" {
   # Should be the IP of the NIC that the worker will connect on
-  address = "192.168.99.102"
+  address = "192.168.50.10"
   # The purpose of this listener
   purpose = "cluster"
 
